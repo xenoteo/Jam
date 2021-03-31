@@ -25,46 +25,43 @@ The most expensive part of executing the algorithm on our architecture is the Re
 
 In the example above, the iterations cost 3, 1, and 2, in that order, for a total of 6.
 
-You are given a size **N** and a cost **C**. Find a list of **N** distinct integers between 1 and **N** such that the cost of applying Reversort to it is exactly **C**, or say that there is no such list. 
+Given the initial list, compute the cost of executing Reversort on it.
 
 ## Input
-The first line of the input gives the number of test cases, **T**. **T** lines follow. Each line describes a test case with two integers **N** and **C**, the size of the wanted list and the desired cost, respectively.
+The first line of the input gives the number of test cases, **T**. **T** test cases follow. Each test case consists of 2 lines. The first line contains a single integer **N**, representing the number of elements in the input list. The second line contains **N** distinct integers **L<sub>1</sub>**, **L<sub>2</sub>**, ..., **L<sub>N</sub>**, representing the elements of the input list *L*, in order.
 
 ## Output
-For each test case, if there is no list of size **N** such that applying Reversort to it costs exactly **C**, output one line containing `Case #x: IMPOSSIBLE`, where `x` is the test case number (starting from 1). Otherwise, output one line containing `Case #x: y1 y2 ... yN`, where `x` is the test case number (starting from 1) and each `yi` is a distinct integer between 1 and **N**, representing the *i*-th element of one such possible list.
-
-If there are multiple solutions, you may output any one of them. 
+For each test case, output one line containing `Case #x: y`, where `x` is the test case number (starting from 1) and `y` is the total cost of executing Reversort on the list given as input.
 
 ## Limits
 Time limit: 10 seconds.  
 Memory limit: 1 GB.  
 1 ≤ **T** ≤ 100.  
-1 ≤ **C** ≤ 1000.
 2 ≤ **N** ≤ 100.
+1 ≤ **L<sub>i</sub>** ≤ N, for all *i*.  
+**L<sub>i</sub>** ≠ **L<sub>j</sub>**, for all *i* ≠ *j*.
+
 
 ## Sample
 ### Sample Input
 <pre>
-5
-4 6
-2 1
-7 12
-7 2
-2 1000
+3
+4
+4 2 1 3
+2
+1 2
+7
+7 6 5 4 3 2 1
 </pre>
 ### Sample Output
 <pre>
-Case #1: 4 2 1 3
-Case #2: 1 2
-Case #3: 7 6 5 4 3 2 1
-Case #4: IMPOSSIBLE
-Case #5: IMPOSSIBLE
+Case #1: 6
+Case #2: 1
+Case #3: 12
 </pre>
 
 Sample Case #1 is described in the statement above.
 
-In Sample Case #2, the algorithm runs for only one iteration on the proposed output. In that iteration, reverse is applied to a sublist of size 1, therefore, its cost is 1.
+In Sample Case #2, there is a single iteration, in which Reverse is applied to a sublist of size 1. Therefore, the total cost is 1.
 
-In Sample Case #3, the first iteration reverses the full list, for a cost of 7. After that, the list is already sorted, but there are 5 more iterations, each of which contributes a cost of 1. Another valid output would be `7 5 4 3 2 1 6`. For that output, the first iteration has a cost of 6, the last one has a cost of 2, and all others have a cost of 1.
-
-In Sample Case #4, Reversort will necessarily perform 6 iterations, each of which will have a cost of at least 1, so there is no way the total cost can be as low as required. 
+In Sample Case #3, the first iteration reverses the full list, for a cost of 7. After that, the list is already sorted, but there are 5 more iterations, each of which contributes a cost of 1. 

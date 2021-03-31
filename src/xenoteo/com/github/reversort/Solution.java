@@ -16,6 +16,13 @@ public class Solution {
         }
     }
 
+    /**
+     * Counts the cost of reversort.
+     * Complexity is O(N^2).
+     *
+     * @param L  the array to sort
+     * @return the cost of reversort
+     */
     private static int reverseCost(int[] L){
         int cost = 0;
         for (int i = 0; i < L.length - 1; i++){
@@ -23,8 +30,16 @@ public class Solution {
             reverse(L, i, j);
             cost += j - i + 1;
         }
-        return cost;    }
+        return cost;
+    }
 
+    /**
+     * Finds the index of the minimum element from the provided index to the end of the array.
+     *
+     * @param L  the array
+     * @param i  the index to start from
+     * @return the index of the minimum element
+     */
     private static int minPosition(int[] L, int i){
         int min = L[i];
         int minPos = i;
@@ -37,7 +52,13 @@ public class Solution {
         return minPos;
     }
 
-
+    /**
+     * Reverses an array from index i to index j (all inclusive).
+     *
+     * @param L  the array
+     * @param i  the start index
+     * @param j  the end index
+     */
     private static void reverse(int[] L, int i, int j){
         int half = (j - i) / 2;
         for (int k = 0; k <= half; k++){
