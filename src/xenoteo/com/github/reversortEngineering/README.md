@@ -39,7 +39,7 @@ If there are multiple solutions, you may output any one of them.
 Time limit: 10 seconds.  
 Memory limit: 1 GB.  
 1 ≤ **T** ≤ 100.  
-1 ≤ **C** ≤ 1000.
+1 ≤ **C** ≤ 1000.  
 2 ≤ **N** ≤ 100.
 
 ## Sample
