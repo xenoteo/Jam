@@ -14,8 +14,14 @@ public class Solution {
         }
     }
 
-    // CJ => x
-    // JC => y
+    /**
+     * Finds the minimum cost needed to be payed in copyrights for a finished mural.
+     *
+     * @param x  the cost of the CJ
+     * @param y  the cost of the JC
+     * @param s  the unfinished mural
+     * @return the minimum cost needed to be payed in copyrights for a finished mural
+     */
     private static int minCost(int x, int y, String s){
         int cost = 0;
         char[] chars = s.toCharArray();
