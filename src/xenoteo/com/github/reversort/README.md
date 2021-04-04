@@ -65,7 +65,3 @@ Sample Case #1 is described in the statement above.
 In Sample Case #2, there is a single iteration, in which Reverse is applied to a sublist of size 1. Therefore, the total cost is 1.
 
 In Sample Case #3, the first iteration reverses the full list, for a cost of 7. After that, the list is already sorted, but there are 5 more iterations, each of which contributes a cost of 1. 
-
-\\[f(x) = \frac{1}{1 + e^{-x}}\\]
-
-$$f(x) = \frac{1}{1 + e^{-x}}$$
