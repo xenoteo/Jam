@@ -1,6 +1,6 @@
 # [Moons and Umbrellas](https://codingcompetitions.withgoogle.com/codejam/round/000000000043580a/00000000006d1145)
 ## Problem
-Cody-Jamal is working on his latest piece of abstract art: a mural consisting of a row of waning moons and closed umbrellas. Unfortunately, greedy copyright trolls are claiming that waning moons look like an uppercase `C` and closed umbrellas look like a `J`, and they have a copyright on `CJ` and `JC`. Therefore, for each time `CJ` appears in the mural, Cody-Jamal must pay **X**, and for each time `JC` appears in the mural, he must pay **Y**.
+Cody-Jamal is working on his latest piece of abstract art: a mural consisting of a row of waning moons and closed umbrellas. Unfortunately, greedy copyright trolls are claiming that waning moons look like an uppercase `C` and closed umbrellas look like a `J`, and they have a copyright on `CJ` and `JC`. Therefore, for each time `CJ` appears in the mural, Cody-Jamal must pay **X**, and for each time `JC` appears in the mural, he must pay **Y**.  
 ![picture](moons_and_umbrellas.png)  
 Cody-Jamal is unwilling to let them compromise his art, so he will not change anything already painted. He decided, however, that the empty spaces he still has could be filled strategically, to minimize the copyright expenses.
 
