@@ -1,4 +1,4 @@
-package xenoteo.com.github.moonsAndUmbrellas;
+package xenoteo.com.github.qualification2021.moonsAndUmbrellas;
 
 import java.util.Scanner;
 

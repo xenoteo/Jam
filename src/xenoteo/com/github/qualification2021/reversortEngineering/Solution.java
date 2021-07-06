@@ -1,4 +1,4 @@
-package xenoteo.com.github.reversortEngineering;
+package xenoteo.com.github.qualification2021.reversortEngineering;
 
 import java.util.*;
 

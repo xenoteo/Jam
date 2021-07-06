@@ -1,4 +1,4 @@
-package xenoteo.com.github.cheatingDetection;
+package xenoteo.com.github.qualification2021.cheatingDetection;
 
 import java.util.Scanner;
 

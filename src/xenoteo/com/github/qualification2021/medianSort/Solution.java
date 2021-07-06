@@ -1,4 +1,4 @@
-package xenoteo.com.github.medianSort;
+package xenoteo.com.github.qualification2021.medianSort;
 
 import java.util.ArrayList;
 import java.util.List;

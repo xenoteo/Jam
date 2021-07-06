@@ -1,4 +1,4 @@
-package xenoteo.com.github.reversort;
+package xenoteo.com.github.qualification2021.reversort;
 
 import java.util.Scanner;
 
