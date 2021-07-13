@@ -12,3 +12,4 @@ Solutions to the [Google Code Jam](https://codingcompetitions.withgoogle.com/cod
     - [Impartial Offerings](src/xenoteo/com/github/io2021/impartialOfferings)
     - [Inconstant Ordering](src/xenoteo/com/github/io2021/inconstantOrdering)
     - [Introductions Organization](src/xenoteo/com/github/io2021/introductionsOrganization)
+    - [Irrefutable Outcome](src/xenoteo/com/github/io2021/irrefutableOutcome)
